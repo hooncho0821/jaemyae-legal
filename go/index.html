@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>잼얘 — 취향이 비슷한 사람과 1:1 대화</title>
+<meta name="description" content="관심사가 비슷한 사람을 찾아 부담 없이 대화해보세요. 만 19세 이상 성인 전용.">
+
+<!-- 공유 미리보기(카카오톡·문자·SNS) — 애플 스토어 페이지는 아이콘 카드만 만들어 주므로 우리 페이지로 공유한다.
+     사람이 열면 아래 스크립트가 바로 App Store로 보낸다 (크롤러는 스크립트를 실행하지 않고 이 태그만 읽는다). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="잼얘">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://hooncho0821.github.io/jaemyae-legal/go/">
+<meta property="og:title" content="잼얘 — 취향이 비슷한 사람과 1:1 대화">
+<meta property="og:description" content="관심사가 비슷한 사람을 찾아 부담 없이 대화해보세요. 만 19세 이상 성인 전용.">
+<meta property="og:image" content="https://hooncho0821.github.io/jaemyae-legal/og.jpg">
+<meta property="og:image:secure_url" content="https://hooncho0821.github.io/jaemyae-legal/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="파란 하늘 위의 빨간 우체통 — 잼얘">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="잼얘 — 취향이 비슷한 사람과 1:1 대화">
+<meta name="twitter:description" content="관심사가 비슷한 사람을 찾아 부담 없이 대화해보세요. 만 19세 이상 성인 전용.">
+<meta name="twitter:image" content="https://hooncho0821.github.io/jaemyae-legal/og.jpg">
+
+<!-- iOS Safari 상단 스마트 앱 배너 -->
+<meta name="apple-itunes-app" content="app-id=6791080024">
+
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 24px; box-sizing: border-box;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    color: #191A1E; background: #FAF9F7;
+  }
+  @media (prefers-color-scheme: dark) { body { color: #F2F2F4; background: #0C0B10; } }
+  main { text-align: center; max-width: 420px; }
+  img { width: 100%; max-width: 360px; border-radius: 20px; display: block; margin: 0 auto 24px; }
+  h1 { font-size: 26px; margin: 0 0 8px; }
+  p { margin: 0 0 24px; opacity: .8; }
+  a.btn {
+    display: inline-block; padding: 14px 28px; border-radius: 999px;
+    background: #191A1E; color: #fff; text-decoration: none; font-weight: 600;
+  }
+  @media (prefers-color-scheme: dark) { a.btn { background: #F2F2F4; color: #0C0B10; } }
+  .note { margin-top: 20px; font-size: 13px; opacity: .6; }
+  .note a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <img src="../og.jpg" alt="잼얘" width="1200" height="630">
+  <h1>잼얘</h1>
+  <p>취향이 비슷한 사람과 1:1 대화<br>만 19세 이상 성인 전용</p>
+  <a class="btn" id="store" href="https://apps.apple.com/kr/app/id6791080024">App Store에서 받기</a>
+  <div class="note" id="note"></div>
+</main>
+<script>
+  // 아이폰·맥은 바로 App Store로. 그 외(안드로이드·PC)는 버튼과 안내만 보여준다 — Android 버전은 준비 중.
+  (function () {
+    var STORE = 'https://apps.apple.com/kr/app/id6791080024';
+    var ua = navigator.userAgent || '';
+    var apple = /iPhone|iPad|iPod|Macintosh/.test(ua);
+    if (apple) { location.replace(STORE); return; }
+    if (/Android/.test(ua)) {
+      document.getElementById('note').textContent = 'Android 버전은 준비 중이에요. 지금은 iPhone에서 이용할 수 있어요.';
+    }
+  })();
+</script>
+</body>
+</html>
